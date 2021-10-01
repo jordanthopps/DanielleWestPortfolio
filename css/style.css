@@ -1,3 +1,16 @@
+:root {
+    --dw-primaryColor: rgb(173, 153, 216);
+    --dw-secondaryColor: rgb(104, 36, 115);
+    --formFocusColor: var(--dw-secondarycolor);
+    --formFocusShadowColor: rgba(244, 119, 255, 0.5);
+}
+
+/*Use this class to override other styles*/
+.form-control:focus {
+    border-color: var(--formFocusColor);
+    box-shadow: 0 0 0 .25rem var(--formFocusShadowColor);
+}
+
 .sticky-nav {
     position: fixed;
     left: 0;
